@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arterior Jaya Maxima</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Perusahaan jasa konstruksi terpercaya untuk proyek bangunan, renovasi, dan desain arsitektur di Indonesia.">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0f172a',
+            darkCard: '#1e293b',
+            darkText: '#cbd5e1'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark text-darkText">
+  <header class="bg-blue-900 text-white p-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="images/logo-arterior.jpg" alt="Logo Arterior" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold">Arterior Jaya Maxima</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#tentang" class="hover:underline">Tentang</a>
+        <a href="#layanan" class="hover:underline">Layanan</a>
+        <a href="#galeri" class="hover:underline">Galeri</a>
+        <a href="#kontak" class="hover:underline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url('https://source.unsplash.com/1600x900/?construction');">
+    <div class="bg-black bg-opacity-50 p-10 rounded">
+      <h2 class="text-4xl font-bold mb-4">We Create The Shopisticated Things</h2>
+      <p class="text-lg">Profesional. Terpercaya. Berpengalaman.</p>
+    </div>
+  </section>
+
+  <section id="tentang" class="py-16 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">Tentang Kami</h3>
+    <p class="text-lg">
+      PT. Arterior Jaya Maxima adalah perusahaan yang bergerak di bidang Arsitektur, Konstruksi Sipil, Elektrikal Mekanikal Plumbing, Renovasi maupun Pameran.
+      Kami sudah berpengalaman lebih dari 15 Tahun dalam hal pekerjaan proyek yang beraneka ragam dan keberhasilan kami dalam mengatasi segala tantangan adalah berkat kerja sama tim dan inovasi-inovasi yang kami lakukan setiap waktu.
+    </p>
+  </section>
+
+  <section id="layanan" class="bg-darkCard py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Layanan Kami</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-dark p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Konstruksi Sipil</h4>
+          <p>Pembangunan infrastruktur seperti pondasi, struktur beton, dan pekerjaan sipil lainnya.</p>
+        </div>
+        <div class="bg-dark p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Interior</h4>
+          <p>Penataan ruang dalam bangunan untuk fungsi dan estetika optimal.</p>
+        </div>
+        <div class="bg-dark p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Mekanikal Elektrikal Plumbing (MEP)</h4>
+          <p>Instalasi sistem mekanikal, elektrikal, dan plumbing yang terintegrasi.</p>
+        </div>
+        <div class="bg-dark p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Pameran</h4>
+          <p>Desain dan pembangunan booth atau stan pameran yang menarik dan fungsional.</p>
+        </div>
+        <div class="bg-dark p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">Renovasi</h4>
+          <p>Peningkatan, perbaikan, dan modernisasi bangunan eksisting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="py-16 px-6 bg-darkCard">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Galeri Proyek</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="images/Proyek 1.jpg" class="rounded shadow" alt="Proyek 1">
+        <img src="images/Proyek 2.jpg" class="rounded shadow" alt="Proyek 2">
+        <img src="images/Proyek 3.jpg" class="rounded shadow" alt="Proyek 3">
+        <img src="images/Proyek 4.jpg" class="rounded shadow" alt="Proyek 4">
+        <img src="images/Proyek 5.jpg" class="rounded shadow" alt="Proyek 5">
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="py-16 px-6 bg-blue-900 text-white">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-4">Hubungi Kami</h3>
+      <p class="mb-6">Silakan isi formulir di bawah ini atau hubungi kami langsung:</p>
+      <form action="https://formsubmit.co/wahid.arterior@gmail.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" name="nama" placeholder="Nama Anda" required class="p-3 rounded border text-black">
+        <input type="email" name="email" placeholder="Email Anda" required class="p-3 rounded border text-black">
+        <textarea name="pesan" placeholder="Pesan Anda" rows="4" required class="md:col-span-2 p-3 rounded border text-black"></textarea>
+        <button type="submit" class="bg-white text-blue-900 px-6 py-3 rounded hover:bg-gray-300">Kirim</button>
+      </form>
+      <div class="mt-8 space-y-2 text-lg">
+        <p>📞 0852-7882-9848</p>
+        <p>📧 wahid.arterior@gmail.com</p>
+        <p>📍 Ruko Golden Boulevard Blok F2 No.30 BSD City Tangerang Selatan</p>
+        <a href="https://wa.me/6285278829848" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">Chat via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full">
+    <iframe class="w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2395592239094!2d106.65529557499378!3d-6.234607993747261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb2f7ba7fa6d%3A0x2438a7db4fcb3967!2sRuko%20Golden%20Boulevard%2C%20Jl.%20Pahlawan%20Seribu%2C%20Lengkong%20Gudang%2C%20Serpong%2C%20Tangerang%20Selatan%2C%20Banten%2015310!5e0!3m2!1sid!2sid!4v1715700000000!5m2!1sid!2sid" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer class="bg-blue-900 text-white text-center py-6">
+    &copy; 2025 Arterior Jaya Maxima. All rights reserved.
+  </footer>
+</body>
+</html>
